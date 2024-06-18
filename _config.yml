@@ -1,0 +1,27 @@
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Mui Kai En
+description:      'Computer engineer, Problem solver, Maker'
+url:              http://muikaien.com
+baseurl:          /
+
+author:
+  name:           'Mui Kai En'
+  url:            https://muikaien.com
+
+collections:
+  projects:
+    output: true
+
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-seo-tag
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/kaine119/portfolio

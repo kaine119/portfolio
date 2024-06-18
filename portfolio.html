@@ -1,0 +1,33 @@
+---
+layout: page
+title: Portfolio
+---
+
+{% assign categories = "internships, projects, coursework" | split: ", " %}
+
+{% for category in categories %}
+{% assign projects = site.projects | sort: 'year' | reverse | where: "category", category %}
+  {% if projects.size == 0 %}
+    {% continue %}
+  {% endif %}
+  <h2>{{ category | capitalize }}</h2>
+  <div class="projects">
+    {% for project in projects %}
+    <div class="project-container">
+      <div class="project">
+        <img src="/public/images/projects/{{ project.image }}"/>
+        <div class="project__info">
+          <ul>
+            {% for i in project.technologies %}<li>{{ i }}</li>{% endfor %}
+          </ul>
+          <h2>{{ project.title }}</h2>
+          <a href="{{ project.url }}">Read more</a><br>
+          {% if project.link != nil %}
+            <a href="{{ project.link }}">Link</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+{% endfor %}
