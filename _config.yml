@@ -4,8 +4,8 @@ permalink:        pretty
 # Setup
 title:            Mui Kai En
 description:      'Computer engineer, Problem solver, Maker'
-url:              http://muikaien.com
-baseurl:          /
+url:              https://muikaien.com
+baseurl:          https://muikaien.com/
 
 author:
   name:           'Mui Kai En'
