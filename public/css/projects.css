@@ -1,14 +1,15 @@
 @media (min-width: 90em) {
   .content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 5fr 3fr;
     grid-template-rows: 1;
-    max-width: calc(100vw - 26rem - 10rem);
+    max-width: calc(100vw - 20rem);
   }
 
   .project__image {
     grid-row: 1 / 1;
     grid-column: 2 / 2;
+    max-width: 100%;
   }
 
   .project__image img {
@@ -20,6 +21,10 @@
     margin: 0;
 
   }
+}
+
+.project__image {
+  max-width: 75%;
 }
 
 video {
@@ -46,9 +51,9 @@ video {
 
 @media screen and (max-width: 768px) {
 
-  img.project__hero {
+  img.project__image {
     object-fit: cover;
-    max-width: 100%;
+    max-width: 50%;
   }
 
   .youtube {

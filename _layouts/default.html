@@ -4,6 +4,10 @@
   {% include head.html %}
 
   <body>
+    <!-- Fix for Firefox flash of unstyled content -->
+    <!-- https://stackoverflow.com/questions/21147149/flash-of-unstyled-content-fouc-in-firefox-only-is-ff-slow-renderer -->
+    <!-- Mozilla, please fix -->
+    <script type="text/javascript">0</script>
 
     {% include sidebar.html %}
 

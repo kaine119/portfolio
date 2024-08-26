@@ -27,6 +27,8 @@
   position: relative;
   height: 300px;
   width: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
 
   transition: all 0.25s ease-in-out;
   transform-style: preserve-3d;
@@ -58,6 +60,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
+  padding: 10px;
 
   background: #eceff4;
   color: #2e3440;
