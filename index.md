@@ -27,4 +27,7 @@ I also have extensive experience in software development from my earlier days, i
 * Full-stack web application development &mdash; Experience in HTML/CSS/JS, Vue.JS, AngularJS 1.x, Flask,
 ExpressJS, Heroku, Jekyll
 
-I can be reached at [`kaien_mui@mymail.sutd.edu.sg`](mailto:kaien_mui@mymail.sutd.edu.sg)
+I can be reached on [Linkedin][linkedin], or at [`kaien_mui@mymail.sutd.edu.sg`][email]
+
+[linkedin]: https://www.linkedin.com/in/mui-kai-en/
+[email]: mailto:kaien_mui@mymail.sutd.edu.sg

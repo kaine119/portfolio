@@ -27,7 +27,7 @@
       {% assign categories = "internships, projects, coursework" | split: ", " %}
 
       {% for category in categories %}
-        {% assign pages_list = site.projects | where: "category", category %}
+        {% assign pages_list = site.projects | where: "category", category | sort: 'year' | reverse %}
         {% if pages_list.size == 0 %}
           {% continue %}
         {% endif %}
@@ -39,6 +39,11 @@
         {% endfor %}
       {% endfor %}
     </nav>
+
+    <a href="https://www.linkedin.com/in/mui-kai-en/">Linkedin</a> &mdash;
+    <a href="mailto:kaien_mui@mymail.sutd.edu.sg">Email</a>
+
+    <br><br>
 
     <p style="font-size: 5pt">Page built with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://github.com/poole/hyde/tree/master">Hyde</a>.
   </div>
